@@ -5,7 +5,7 @@ public class Program
     private static void Main(string[] args)
     {
         Console.Write("Enter week days : ");
-        string weekDays = ReadLine();
+        string weekDays = Console.ReadLine()?? "NULL";
         switch (weekDays.ToUpper()){
           case "SATURDAY":
             Console.WriteLine("Saturday");
