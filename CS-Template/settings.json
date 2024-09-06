@@ -1,0 +1,17 @@
+//Paste it into the code snippet .json file;
+{
+"Print TO Console" : {
+  "prefix": "writeline",
+  "body": [
+    "Console.WriteLine($\"$1\");",
+  ],
+"description": "C# Console Output"
+},
+"Write TO Console" : {
+  "prefix": "readline",
+  "body": [
+    "Convert.$1(Console.ReadLine());"
+  ],
+"description": "C# Console Input"
+}
+}
