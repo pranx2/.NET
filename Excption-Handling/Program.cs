@@ -2,7 +2,7 @@
 //finally
 
 
-namespace expectation_handling;
+namespace Exception_Handling;
 
 class Program
 {
