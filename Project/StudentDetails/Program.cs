@@ -32,7 +32,7 @@ class StudentDetails{
    public int CalculateAge(){ // calculating age;
     int Year = DateTime.Now.Year - _dateOfBirth.Year;
     return Year;
-   }
+}
     public void ShowDetails(){
         Console.WriteLine($"Student Name: {StudentName}");
         Console.WriteLine($"Date of Birth:{_dateOfBirth.ToShortDateString()}"); // for showing date in short format;
@@ -51,10 +51,10 @@ class Program{
         try{ // trying this block of code;
         StudentDetails Student1 = new StudentDetails("Pranto",new DateTime(2005,10,16), "2233081405", "60-A", "Fall-24", "Uttara University", "CSE");
         StudentDetails Student2 = new StudentDetails("Pritom",new DateTime(2003,10,16),"2233081406","60-B","Fall-24","Uttara University","CSE");
-          
+        
         Student1.ShowDetails();
-           Console.Write($"Student Age is :  {Student1.CalculateAge()} Year ");
-           Console.WriteLine($"{DateTime.Now.Month - Student1.DateOfBirth.Month} Month {DateTime.Now.Day - Student1.DateOfBirth.Day} Days");
+            Console.Write($"Student Age is :  {Student1.CalculateAge()} Year ");
+            Console.WriteLine($"{DateTime.Now.Month - Student1.DateOfBirth.Month} Month {DateTime.Now.Day - Student1.DateOfBirth.Day} Days");
         
         Console.WriteLine($"\n\n"); //Line BReaks
         
